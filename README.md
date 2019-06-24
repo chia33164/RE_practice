@@ -1,4 +1,4 @@
-# 爬蟲練習
+# Regurlar Expression Practice
 
 ## Envirenment
 
@@ -28,7 +28,10 @@ https://moodle.ncku.edu.tw/pluginfile.php/1364207/mod_resource/content/1/PL_HW2.
 
 正規化 :
 
-	取出由作者名稱開頭中間有 originally announced 結尾有</p> 的字串，這樣就可以確保該篇的作者中有我們指定的人，接著將上述的結果切出 originally announced 開頭 </p> 結尾的內容，然後切出年份後存到 years 這個 list
+	取出由作者名稱開頭中間有 originally announced 結尾有</p> 的字串
+	這樣就可以確保該篇的作者中有我們指定的人
+	接著將上述的結果切出 originally announced 開頭 </p> 結尾的內容
+	然後切出年份後存到 years 這個 list
 
 接著對 years 做排序 （ sort ）
 然後對 years 做 group
@@ -48,6 +51,8 @@ $ python3 question1.py
 Ian Goodfellow
 
 **output**
+
+
 ![](https://i.imgur.com/ReyOESS.png)
 
 ### question 2
@@ -72,7 +77,8 @@ Ian Goodfellow
 
 正規化 :
 
-	取出 Authors: 開頭 </p> 結尾的字串藉此可以把該篇文章的全部作者都取出來，在把上述的正規化一一再正規化一次取出 author 名稱
+	取出 Authors: 開頭 </p> 結尾的字串藉此可以把該篇文章的全部作者都取出來
+	在把上述的正規化一一再正規化一次取出 author 名稱
 
 然後必須確定該篇的作者中包含我們指定的 author，若有就把該篇的作者都放進 co_author 這個 list
 否則就不放入，因為該篇不是由該作者完成，而是名字相似的人完成
